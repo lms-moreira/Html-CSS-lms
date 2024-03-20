@@ -11,42 +11,79 @@
 </head>
 <style>
 .fundo{
-    height: 200vh;
-    background-image: url(IMG/bg1.png);
-    background-repeat: no-repeat;
+    height: 150vh;
+    background-image: url(IMG/bg2.png);
     background-position:center;
+    background-repeat: no-repeat;
     background-size: cover;
+    
 
 }
 
-body img{
-   margin: auto;
-   display: block;
-   transform: translate(0%, 90%);
-  
-   
-  
-   
-}
+
 
 </style>
 
 <body>
- <header class="menu">
+ <header id="menu">
 <main>
     <div class="container">
 
         <div class="flex">
 
-            <a href="Index.html"><img src="IMG/path1.png" height="50" id="logo"></a>
+            <i><a href="Index.html" id="logo"><img src="IMG/path1.ico" height="40"></a></i>
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Titulos e Documentos</a></li>
-                    <li><a href="#">Estoque</a></li>
-                    <li><a href="#">Folha Segurança</a></li>
-                    <li><a href="#">Usuário</a></li>
-                    <li><a href="#">Configurações</a></li>
+                    
+                    
+                    <li class="dropdown"><a href="#">Titulos e Documentos</a>
+                        <div class="drop-menu">
+                        <a href="#">checklist</a>
+                        <a href="#">Conferência</a>
+                        <a href="#">Autuação</a>
+                        </div>
+                        </li>
+
+                    
+                    
+                    <li class="dropdown"><a href="#">Estoque</a>
+                        <div class="drop-menu">
+                            <a href="#">Entrada</a>
+                            <a href="#">Saída</a>
+                            <a href="#">GMM</a>
+                            <a href="#">Inventário</a>
+                            <a href="#">Relatórios</a>
+                            </div>
+                            </li>
+                        
+
+                    
+                    <li class="dropdown"><a href="#">Folhas de Segurança</a>
+                        <div class="drop-menu">
+                            <a href="#">Cadastrar uso</a>
+                            <a href="#">justificar Inutilização</a>
+                            <a href="#">Relatórios</a>
+                            </div>
+                            </li>
+                   
+                    <li class="dropdown"><a href="#">Usuario</a>
+                    <div class="drop-menu">
+                        <a href="#">Cadastro</a>
+                        <a href="#">Permissões</a>
+                        </div>
+                        </li>
+
+                    
+                    <li class="dropdown"><a href="#">Configuração</a>
+                        <div class="drop-menu">
+                            <a href="#">Dados Empresa</a>
+                            <a href="#">Base dados</a>
+                            <a href="#">Cadastro Folha Seg</a>
+                            <a href="#">Cadastro Estoque</a>
+                            </div>
+                            </li>
+        
                 </ul>
 
             </nav>
@@ -57,7 +94,9 @@ body img{
     </div><!--Container-->
 
 </main>
- </header>   
+ </header>  
+ <script src="menu.js"></script> 
+
 <section class="fundo"><img src="IMG/logo.png"></section>
 
 </body>
